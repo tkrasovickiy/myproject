@@ -1,4 +1,26 @@
 Myproject::Application.routes.draw do
+  root :to => "main#index"
+  match "/home" => "main#home"
+  match "/tests" => "main#tests"
+  match "/people" => "main#people"
+  match "/forum" => "main#forum"
+  match "/about" => "main#about"
+  match "/help" => "main#help"
+
+#  get "main/index"
+
+#  get "main/home"
+
+#  get "main/tests"
+
+#  get "main/people"
+
+#  get "main/forum"
+
+#  get "main/about"
+
+#  get "main/help"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
